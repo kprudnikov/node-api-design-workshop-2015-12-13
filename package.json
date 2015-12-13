@@ -4,6 +4,7 @@
   "description": "API design with Node.js Workshop - Kyiv, December 13, 2015",
   "main": "index.js",
   "scripts": {
+    "cover": "istanbul cover _mocha",
     "test": "mocha test --recursive --reporter=nyan",
     "watch": "mocha --watch test --recursive --reporter=min --growl"
   },
@@ -27,7 +28,11 @@
     "node-fetch": "^1.3.3"
   },
   "dependencies": {
+    "body-parser": "^1.14.1",
     "co": "^4.6.0",
-    "jsonapi-server": "^1.0.2"
+    "express": "^4.13.3",
+    "jsonapi-server": "^1.0.2",
+    "node-oauth2-server": "^2.4.0",
+    "proxy-middleware": "^0.15.0"
   }
 }
